@@ -24,7 +24,7 @@ attr_reader :id
   end
 
   def self.create(student_hash)
-
+    binding.pry
   end
 
   def save
