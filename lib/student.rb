@@ -34,7 +34,7 @@ attr_reader :id
 
     DB[:conn].execute(sql, self.name, self.grade)
     result = DB[:conn].execute("SELECT last_insert_rowid() FROM students").flatten
-    binding.pry
+    # binding.pry
     @id = result[0]
   end
 
