@@ -25,6 +25,7 @@ attr_reader :id
 
   def self.create(student_hash)
     binding.pry
+    Student.new(student_hash[:name], student_hash[:grade])
   end
 
   def save
