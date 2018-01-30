@@ -23,7 +23,7 @@ attr_reader :id
     DB[:conn].execute("DROP TABLE students;")
   end
 
-  def self.create
+  def self.create(student_hash)
 
   end
 
